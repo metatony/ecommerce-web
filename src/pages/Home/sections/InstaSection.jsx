@@ -4,8 +4,8 @@ import Images from "../../../constants/images";
 function InstaSection() {
   return (
     <div className="flex flex-col mt-5 px-4 container mx-auto">
-      <div className="text-center px-4 pt-7 mb-5">
-        <p className="mb-7 tracking-wider section-header-text">Shop Instagram</p>
+      <div className="text-center px-4 pt-5 mb-10">
+        <p className="tracking-wider section-header-text">Shop Instagram</p>
       </div>
 
       {/* Mobile View */}
@@ -25,7 +25,7 @@ function InstaSection() {
       </div>
 
       {/* Desktop View */}
-      <div className="hidden md:grid grid-cols-5 gap-5 mb-5">
+      <div className="hidden md:grid grid-cols-5 gap-5 mb-10">
         {[
           Images.instaPhoto1,
           Images.instaPhoto2,

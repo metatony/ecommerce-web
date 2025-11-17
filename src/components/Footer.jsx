@@ -5,10 +5,10 @@ function Footer() {
     <footer className="bg-[#f5f4f4]">
       <section className="bg-[#f5f4f4] px-4 container mx-auto">
         {/* Footer Content */}
-        <section className="flex flex-col lg:grid grid-cols-5 gap-4 pt-[76px] space-y-5 text-xl font-light">
+        <section className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-5  py-[76px] paragraph-text">
           {/* CONTACT US section */}
           <div className="space-y-1 w-full">
-            <p className="text-[#565656] mb-5 font-medium">CONTACT US</p>
+            <p className="mb-5 font-medium">CONTACT US</p>
             <p>+1 (844) 326-6000</p>
             <p>Email Us</p>
             <p>Mon-Fri 9am-3pm PT</p>
@@ -16,7 +16,7 @@ function Footer() {
 
           {/* CUSTOMERS section */}
           <div className="space-y-1 w-full">
-            <p className="text-[#565656] mb-5 font-medium">CUSTOMERS</p>
+            <p className="mb-5 font-medium">CUSTOMERS</p>
             <p>Start a Return</p>
             <p>Return Policy</p>
             <p>FAQ</p>
@@ -26,7 +26,7 @@ function Footer() {
 
           {/* COMPANY section */}
           <div className="space-y-1 w-full">
-            <p className="text-[#565656] mb-5 font-medium">COMPANY</p>
+            <p className="mb-5 font-medium">COMPANY</p>
             <p>About Us</p>
             <p>Sustainability</p>
             <p>Discover Revive</p>
@@ -36,7 +36,7 @@ function Footer() {
           </div>
 
           {/* Newsletter Signup section: spans two columns */}
-          <div className="flex flex-col space-y-4 col-span-2">
+          <div className="flex flex-col space-y-4 md:col-span-2">
             <p className="section-header-text tracking-wider">
               Get the latest news from us
             </p>
@@ -50,14 +50,14 @@ function Footer() {
               type="text"
               placeholder="Enter your email address"
             />
-            <button className="bg-black text-white paragraph-text w-36 text-center py-2 rounded-lg">
+            <button className="bg-black text-white paragraph-text w-36 text-center py-2 rounded-lg tracking-wider">
               Subscribe
             </button>
           </div>
         </section>
 
         {/* Copyright */}
-        <section className="w-full py-5 text-[#565656] font-light">
+        <section className="w-full py-5 text-[#565656] paragraph-text">
           <a
             className="flex justify-center text-[#7e7d7d] hover:text-blue-400 "
             target="_blank"

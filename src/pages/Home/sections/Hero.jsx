@@ -11,7 +11,7 @@ function Hero() {
     >
       <div className="px-4 container mx-auto z-10">
         {/* hero text */}
-        <h1 className="block text-white w-full text-3xl md:text-4xl lg:text-5xl mb-[20px] leading-normal md:leading-16 tracking-wide font-[400]">
+        <h1 className="block text-white w-full text-3xl md:text-4xl lg:text-5xl mb-[20px] leading-normal md:leading-16 tracking-wide font-[300]">
           Elevate Your Style <br /> Timeless Fashion,{" "}
           <br className="md:hidden" /> Sustainable <br /> Choices
         </h1>
