@@ -10,7 +10,7 @@ function SectionTwo() {
           <h2 className="section-header-text tracking-wider ">
             Stores
           </h2>
-          <p className="paragraph-text tracking-wide">
+          <p className="paragraph-text tracking-wide leading-7">
             Experience the embodiment of our "Less, but better" philosophy at
             our physical stores, providing an intimate setting to explore our
             dedication to timeless designs, heritage craftsmanship, and

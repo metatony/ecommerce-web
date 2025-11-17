@@ -28,12 +28,16 @@ function SectionFour() {
           <p className="section-header-text tracking-wider">
             Book an Appointment
           </p>
-          <p className="paragraph-text tracking-wide">
+          <p className="paragraph-text tracking-wide leading-7">
             Experience personalized shopping services in a welcoming and
             inviting atmosphere, catering to your individual wardrobe and
             seasonal gifting requirements, available both in-store and
             virtually.
           </p>
+
+          <button className="mt-8 p-3 paragraph-text tracking-wider bg-[#F8F9FA] rounded-lg">
+            Book Appointment
+          </button>
         </article>
       </section>
     </section>

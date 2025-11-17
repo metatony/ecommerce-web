@@ -12,7 +12,7 @@ function FaqAnswers() {
         <h2 className="section-header-text lg:text-3xl tracking-wider">
           Where is my order?
         </h2>
-        <p className="paragraph-text tracking-wide">
+        <p className="paragraph-text tracking-wide leading-7">
           Check the details of your in-store and online purchases, and know
           their status at any moment in My Purchases. If you already have an
           account, log in with your e-mail address and password. If you

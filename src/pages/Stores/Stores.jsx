@@ -15,8 +15,6 @@ function Stores() {
         type="website"
       />
 
-      <h1 className="section-header-text mt-8 mb-8 text-center">Our Stores</h1>
-
       <SectionOne />
       <SectionTwo />
       {/* Grid Section */}

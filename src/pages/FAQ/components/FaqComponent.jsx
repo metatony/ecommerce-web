@@ -1,5 +1,5 @@
-import React from 'react'
-import Faq from 'react-faq-component'
+import React from "react";
+import Faq from "react-faq-component";
 
 function FaqComponent() {
   const data = {
@@ -31,24 +31,25 @@ function FaqComponent() {
           "If you’re missing an item, first check the packing slip. If the item isn’t listed, please reach out to our support team and we’ll assist you with a replacement or refund.",
       },
     ],
-  }
+  };
 
   const styles = {
     titleTextColor: "black",
     rowTitleColor: "black",
-    rowContentColor: "gray", 
-    //arrowColor: "red"
-  }
+    rowContentColor: "gray",
+    rowContentTextSize: "15px",
+    titleTextSize: "30px",
+  };
 
   const config = {
-    // animate: true, tabFocus: true arrowIcon: "", 
-  }
+    // animate: true, tabFocus: true arrowIcon: "",
+  };
 
   return (
     <div className="">
       <Faq data={data} styles={styles} config={config} />
     </div>
-  )
+  );
 }
 
-export default FaqComponent
+export default FaqComponent;

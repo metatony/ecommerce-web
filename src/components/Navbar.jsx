@@ -32,7 +32,7 @@ function Navbar(props) {
       <AnnounceBar />
       <ul className="relative flex justify-between items-center py-4 px-4 container mx-auto">
         {/* Left side: Desktop logo and mobile menu icon */}
-        <li className="flex justify-between items-center lg:space-x-8 paragraph-text">
+        <li className="flex justify-between items-center lg:space-x-8 paragraph-text tracking-wider">
           {/* Logo displayed on desktop */}
           <Link to="/" className="hidden lg:block">
             <img className="w-20 h-5" src={Images.logo} alt="logo" />
@@ -44,7 +44,7 @@ function Navbar(props) {
           {/* Desktop Navigation Items */}
           {navigationMenuItems.map((item) => (
             <Link
-              onMouseEnter={handleMouseEnter}
+              // onMouseEnter={handleMouseEnter}
               // onMouseLeave={handleMouseLeave}
               key={item.page}
               to={item.link}
@@ -63,7 +63,7 @@ function Navbar(props) {
         </li>
 
         {/* Right side nav: Search and Cart */}
-        <li className="flex items-center justify-between lg:space-x-8 paragraph-text">
+        <li className="flex items-center justify-between space-x-8 paragraph-text">
           <SearchBar />
 
           <div onClick={props.toggleCart} className="text-center ">
@@ -87,8 +87,8 @@ function Navbar(props) {
                 ? "translate-y-0 opacity-100"
                 : "-translate-y-5 opacity-0 pointer-events-none"
             } `}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
       >
         {/* Categories Dropdown */}
         {navigationMenuItems.map(function (item) {

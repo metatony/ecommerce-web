@@ -74,7 +74,7 @@ function SearchBar() {
             ))}
         </section>
       )}
-      <p className="hidden lg:block paragraph-text">Stores</p>
+      {/* <p className="hidden lg:block paragraph-text">Stores</p> */}
     </section>
   );
 }

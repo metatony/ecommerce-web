@@ -9,7 +9,7 @@ function ProductListing() {
       {/* Container for Sort and Filter Controls */}
 
       {/* Product Grid */}
-      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 my-20">
+      <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-20">
         {productList.map((item) => (
           <section key={item.id} className="cursor-pointer">
             <Link to={`/product/${item.id}`}>

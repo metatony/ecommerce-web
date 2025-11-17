@@ -23,7 +23,7 @@ function CartSlider({ isOpen, toggleCart }) {
     >
       {/* Header */}
       <div className="p-4  flex justify-between items-center">
-        <h2 className="text-xl font-light tracking-wider">Shopping Bag</h2>
+        <h2 className="paragraph-text tracking-wider">Shopping Bag</h2>
         <IoCloseOutline
           onClick={toggleCart}
           className="h-5 w-5 ml-3 cursor-pointer"
@@ -34,15 +34,15 @@ function CartSlider({ isOpen, toggleCart }) {
         {cart.length > 0 ? (
           cart.map((item) => (
             <div key={item.id}>
-              <div className=" px-4 py-5 flex justify-between items-start mb-4">
+              <div className="px-4 py-5 flex justify-between items-start mb-4">
                 <img
                   src={item.desktopImage}
                   alt={item.name}
                   className="w-16 h-16 object-cover"
                 />
-                <div className="w-36 md:w-48  ">
-                  <p className="font-medium">{item.name}</p>
-                  <p className="text-gray-600">£{item.price}</p>
+                <div className="w-36 md:w-48 paragraph-text tracking-wide leading-7 ">
+                  <p className=" ">{item.name}</p>
+                  <p className="">£{item.price}</p>
                 </div>
 
                 <SlTrash
@@ -54,20 +54,22 @@ function CartSlider({ isOpen, toggleCart }) {
             </div>
           ))
         ) : (
-          <p className="flex justify-center items-center h-full font-light ">
+          <p className="flex justify-center items-center h-full paragraph-text tracking-wide ">
             Your cart is empty 😯
           </p>
         )}
 
         {cart.length > 0 && (
           <div className="p-4 font-light my-20 ">
-            <p className="mb-5">You have {cart.length} items in your cart</p>
+            <p className="mb-5 paragraph-text tracking-wide">
+              You have {cart.length} item(s) in your cart
+            </p>
 
             <button
               onClick={() => navigate("/checkout")}
-              className="w-full bg-black text-white p-3 text-center"
+              className="w-full bg-black text-white p-3 text-center rounded-lg paragraph-text tracking-wide leading-7"
             >
-              CHECK OUT £{totalPrice}
+              Check Out £{totalPrice}
             </button>
           </div>
         )}

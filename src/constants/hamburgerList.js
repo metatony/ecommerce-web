@@ -22,17 +22,17 @@ const navigationMenuItems = [
       { page: "Knitwear", link: "/stores" },
     ],
   },
-  // {
-  //   page: "Faq",
-  //   link: "/faq",
-  //   header: "Featured",
-  //   subItems: [
-  //     { page: "New Arrivals", link: "/shop" },
-  //     { page: "Best Sellers", link: "/shop" },
-  //     { page: "Trending Now", link: "/shop" },
-  //     { page: "Loungewear", link: "/shop" },
-  //   ],
-  // },
+  {
+    page: "Faq",
+    link: "/faq",
+    header: "Featured",
+    subItems: [
+      { page: "New Arrivals", link: "/shop" },
+      { page: "Best Sellers", link: "/shop" },
+      { page: "Trending Now", link: "/shop" },
+      { page: "Loungewear", link: "/shop" },
+    ],
+  },
 
   {
     page: "About",

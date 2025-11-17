@@ -30,18 +30,18 @@ function ProductDetails() {
 
         {/* Right Grid: Product Details */}
         <article className="flex flex-col space-y-5 font-light md:px-4">
-          <p className="text-[#5c5c5c] tracking-wider">Shop / Clothing</p>
-          <h2 className="section-header-text">
+          <p className="text-[#5c5c5c] tracking-wider">Shop | Clothing</p>
+          <h2 className="section-header-text tracking-wider leading-8">
             {" "}
             {product.name} <br /> £{product.price}
           </h2>
-          <p className="md:w-[300px] paragraph-text"> {product.description} </p>
+          <p className="md:w-[450px] paragraph-text tracking-wide leading-7"> {product.description} </p>
 
           {/* button */}
-          <div className="md:w-[300px]">
+          <div className="md:w-[300px] mt-5">
             <button
               onClick={() => addToCart(product)}
-              className="w-full bg-black text-white p-3 text-center rounded-lg paragraph-text"
+              className="w-full bg-black text-white p-3 text-center rounded-lg paragraph-text tracking-wider leading-7"
             >
               Add to Bag
             </button>
@@ -60,22 +60,22 @@ function ProductDetails() {
               key={item.id}
               className="font-light space-y-5 mb-5 lg:w-[307px] "
             >
-              <h3 className="text-[#5c5c5c] tracking-wide">
+              <h3 className="text-[#5c5c5c] tracking-wider leading-8 ">
                 {item.header.toUpperCase()}
               </h3>
-              <p className="font-normal section-header-text">
+              <p className="font-normal section-header-text tracking-wider leading-8  ">
                 {item.subheader}
               </p>
-              <p className="paragraph-text">{item.body}</p>
+              <p className="paragraph-text tracking-wide leading-7 ">{item.body}</p>
             </article>
           );
         })}
       </section>
 
       <section className="mt-10 md:mt-20">
-        <p className="text-center paragraph-text">You might also like</p>
+        <p className="md:text-center paragraph-text tracking-wide leading-7 ">You might also like</p>
 
-        <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-10 lg:my-20 px-4 container mx-auto ">
+        <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10 lg:my-20 px-4 container mx-auto ">
           {randomItems.slice(0, 4).map((item) => (
             <div key={item.id} className="cursor-pointer">
               <Link to={`/product/${item.id}`}>
@@ -86,7 +86,7 @@ function ProductDetails() {
                   loading="lazy"
                 />
               </Link>
-              <div className="paragraph-text mt-2 ">
+              <div className="paragraph-text tracking-wide leading-7 mt-2 ">
                 <p>{item.name}</p>
                 <p>£{item.price}</p>
               </div>

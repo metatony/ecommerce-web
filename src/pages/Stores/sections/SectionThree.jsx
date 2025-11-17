@@ -15,7 +15,7 @@ function SectionThree() {
             alt="store image"
             loading="lazy"
           />
-          <p className="mt-2 text-xl">{item.description}</p>
+          <p className="mt-2 paragraph-text tracking-wide leading-7">{item.description}</p>
         </div>
       ))}
     </section>

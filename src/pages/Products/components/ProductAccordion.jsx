@@ -33,7 +33,7 @@ function ProductAccordion() {
   }
 
   return (
-    <div className="">
+    <div className="mt-10 paragraph-text tracking-wide leading-7 ">
       <Faq data={data} styles={styles} config={config} />
     </div>
   )
