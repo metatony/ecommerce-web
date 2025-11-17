@@ -70,11 +70,11 @@ function SearchBar() {
                 ))}
               </section>
             ) : (
-              <p className="text-center">No products found.</p>
+              <p className="text-center paragraph-text">No products found.</p>
             ))}
         </section>
       )}
-      <p className="hidden lg:block text-lg">Stores</p>
+      <p className="hidden lg:block paragraph-text">Stores</p>
     </section>
   );
 }

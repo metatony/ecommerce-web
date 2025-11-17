@@ -28,11 +28,11 @@ function Navbar(props) {
   };
 
   return (
-    <nav className="sticky top-0 bg-white z-20 border-b border-gray-200">
+    <nav className=" top-0 bg-white z-20 border-b border-gray-200">
       <AnnounceBar />
       <ul className="relative flex justify-between items-center py-4 px-4 container mx-auto">
         {/* Left side: Desktop logo and mobile menu icon */}
-        <li className="flex justify-between items-center lg:space-x-8 text-lg font-light ">
+        <li className="flex justify-between items-center lg:space-x-8 paragraph-text">
           {/* Logo displayed on desktop */}
           <Link to="/" className="hidden lg:block">
             <img className="w-20 h-5" src={Images.logo} alt="logo" />
@@ -48,7 +48,7 @@ function Navbar(props) {
               // onMouseLeave={handleMouseLeave}
               key={item.page}
               to={item.link}
-              className="hidden lg:block text-lg"
+              className="hidden lg:block "
             >
               {item.page}
             </Link>
@@ -63,13 +63,13 @@ function Navbar(props) {
         </li>
 
         {/* Right side nav: Search and Cart */}
-        <li className="flex items-center justify-between lg:space-x-6 font-light">
+        <li className="flex items-center justify-between lg:space-x-8 paragraph-text">
           <SearchBar />
 
           <div onClick={props.toggleCart} className="text-center ">
             <FaBagShopping className="lg:h-10" />
             {cart.length > 0 && (
-              <p className="absolute top-7 border-2 border-white right-1 bg-red-500 text-white rounded-full text-xs w-4 h-4 p-2 flex items-center justify-center text-center">
+              <p className="absolute top-7 border-2 border-white right-1 bg-red-500 text-white rounded-full w-4 h-4 p-2 flex items-center justify-center text-center">
                 {cart.length}
               </p>
             )}
@@ -94,7 +94,7 @@ function Navbar(props) {
         {navigationMenuItems.map(function (item) {
           return (
             <div key={item.header} className="font-light ">
-              <h4 className="mb-5 font-medium text-lg">
+              <h4 className="mb-5 font-medium ">
                 {item.header}
               </h4>
               <ul className="space-y-3">

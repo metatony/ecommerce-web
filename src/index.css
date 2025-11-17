@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  font-family: "Zain", sans-serif;
+  font-family: "Satoshi", sans-serif;
   background-color: white;
 }
 
@@ -71,16 +71,24 @@ body {
 
 @layer components {
   .paragraph-text {
-    @apply text-lg lg:text-xl font-light;
+    @apply text-[14px] md:text-[16px] font-light;
   }
 
   .section-header-text {
-    @apply text-2xl lg:text-3xl font-[400] text-[#292929];
+    @apply text-[20px] md:text-xl font-[400] text-[#292929];
   }
 
   .card-header-title {
     @apply text-3xl lg:text-6xl text-[#292929] font-[400];
   }
+
+  /* .card-header-text {
+    @apply text-[20px] md:text-xl lg:text-2xl font-[400] text-[#292929];
+  }
+
+  .section-header-title {
+    @apply text-xl md:text-2xl lg:text-5xl text-[#292929] font-[400];
+  } */
 
   .border-color-gray {
     @apply border border-[#E5E5E5] rounded-xl;

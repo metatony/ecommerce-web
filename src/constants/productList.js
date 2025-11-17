@@ -56,7 +56,7 @@ const productList = [
   },
   {
     id: 6,
-    name: "Single-Origin Cashmere Cropped Sweater",
+    name: "Cashmere Cropped Sweater",
     price: 30,
     desktopImage:
       "https://res.cloudinary.com/de2vjcr29/image/upload/v1750021948/image-5_uodep3.png",
@@ -175,7 +175,7 @@ const productList = [
   },
   {
     id: 18,
-    name: "Single-Origin Cashmere Beanie",
+    name: "Cashmere Beanie",
     price: 35,
     desktopImage:
       "https://res.cloudinary.com/de2vjcr29/image/upload/v1749586574/desk4_hqfuj0.png",

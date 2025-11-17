@@ -12,7 +12,7 @@ function Carousel() {
     >
       {/* Section Heading */}
       <header className="text-xl font-light py-12 md:py-16 w-full text-left">
-        <p className="py-2 tracking-wider section-header-text text-center">What to Wear Now</p>
+        <p className="py-2 tracking-wider section-header-text text-left">What to Wear Now</p>
       </header>
 
       {/* Carousel Slider */}
