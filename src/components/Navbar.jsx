@@ -15,20 +15,20 @@ function Navbar(props) {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    setIsMegaMenuOpen(false);
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   setIsMegaMenuOpen(false);
+  // }, [location.pathname]);
 
-  const handleMouseEnter = () => {
-    setIsMegaMenuOpen(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsMegaMenuOpen(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsMegaMenuOpen(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsMegaMenuOpen(false);
+  // };
 
   return (
-    <nav className=" top-0 bg-white z-20 border-b border-gray-200">
+    <nav className="sticky top-0 bg-white z-20 border-b border-gray-200">
       <AnnounceBar />
       <ul className="relative flex justify-between items-center py-4 px-4 container mx-auto">
         {/* Left side: Desktop logo and mobile menu icon */}
@@ -48,7 +48,7 @@ function Navbar(props) {
               // onMouseLeave={handleMouseLeave}
               key={item.page}
               to={item.link}
-              className="hidden lg:block "
+              className="hidden lg:block text-[14px]"
             >
               {item.page}
             </Link>
@@ -69,7 +69,7 @@ function Navbar(props) {
           <div onClick={props.toggleCart} className="text-center ">
             <FaBagShopping className="lg:h-10" />
             {cart.length > 0 && (
-              <p className="absolute top-7 border-2 border-white right-1 bg-red-500 text-white rounded-full w-4 h-4 p-2 flex items-center justify-center text-center">
+              <p className="absolute top-7 border-2 border-white right-1 bg-red-500 text-white rounded-full w-4 h-4 p-2 flex items-center justify-center text-center text-[9px] font-bold">
                 {cart.length}
               </p>
             )}
@@ -94,9 +94,7 @@ function Navbar(props) {
         {navigationMenuItems.map(function (item) {
           return (
             <div key={item.header} className="font-light ">
-              <h4 className="mb-5 font-medium ">
-                {item.header}
-              </h4>
+              <h4 className="mb-5 font-medium ">{item.header}</h4>
               <ul className="space-y-3">
                 {item.subItems.map((subItem) => (
                   <li key={subItem.page}>
@@ -107,7 +105,6 @@ function Navbar(props) {
             </div>
           );
         })}
-
       </div>
     </nav>
   );

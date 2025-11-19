@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-[#f5f4f4]">
+    <footer className="bg-[#f5f4f4] ">
       <section className="bg-[#f5f4f4] px-4 container mx-auto">
         {/* Footer Content */}
-        <section className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-5  py-[76px] paragraph-text">
+        <section className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-5  py-[76px] paragraph-text ">
           {/* CONTACT US section */}
           <div className="space-y-1 w-full">
             <p className="mb-5 font-medium">CONTACT US</p>
@@ -57,7 +57,7 @@ function Footer() {
         </section>
 
         {/* Copyright */}
-        <section className="w-full py-5 text-[#565656] paragraph-text">
+        <section className="w-full py-5 text-[#565656] text-[14px]">
           <a
             className="flex justify-center text-[#7e7d7d] hover:text-blue-400 "
             target="_blank"

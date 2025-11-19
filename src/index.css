@@ -3,6 +3,8 @@
 body {
   font-family: "Satoshi", sans-serif;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .embla {
@@ -63,6 +65,12 @@ body {
   z-index: 1;
 }
 
+.faq-row-wrapper {
+  .faq-title {
+    @apply font-[400] pb-6 tracking-wider text-[#292929];
+  }
+}
+
 @media (max-width: 1023px) {
   .hero {
     background-image: url("/assets/heroMobile.png");
@@ -87,14 +95,6 @@ body {
   .card-header-title {
     @apply text-3xl lg:text-6xl text-[#292929] font-[400];
   }
-
-  /* .card-header-text {
-    @apply text-[20px] md:text-xl lg:text-2xl font-[400] text-[#292929];
-  }
-
-  .section-header-title {
-    @apply text-xl md:text-2xl lg:text-5xl text-[#292929] font-[400];
-  } */
 
   .border-color-gray {
     @apply border border-[#E5E5E5] rounded-xl;

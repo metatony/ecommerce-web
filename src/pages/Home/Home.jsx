@@ -16,19 +16,14 @@ function LandingPage() {
         type="website"
       />
 
-      {/* Hero Section */}
       <Hero />
 
-      {/* Categories Section */}
       <Categories />
 
-      {/* Carousel Section */}
       <Carousel />
 
-      {/* Collection Banner Section */}
       <CollectionBanner />
 
-      {/* Instagram Section */}
       <InstaSection />
     </main>
   );

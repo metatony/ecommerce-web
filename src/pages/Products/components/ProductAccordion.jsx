@@ -1,5 +1,5 @@
-import React from 'react'
-import Faq from 'react-faq-component'
+import React from "react";
+import Faq from "react-faq-component";
 
 function ProductAccordion() {
   const data = {
@@ -7,7 +7,7 @@ function ProductAccordion() {
       {
         title: "Description",
         content:
-        "This product is the epitome of modern design and quality. Expertly crafted using premium materials, it offers a perfect blend of functionality and style. Whether you're dressing for a casual outing or a formal event, this product elevates your look with its refined details and exceptional comfort. Experience the difference that meticulous attention to detail and superior craftsmanship can make.",
+          "This product is the epitome of modern design and quality. Expertly crafted using premium materials, it offers a perfect blend of functionality and style. Whether you're dressing for a casual outing or a formal event, this product elevates your look with its refined details and exceptional comfort. Experience the difference that meticulous attention to detail and superior craftsmanship can make.",
       },
       {
         title: "Care Instructions",
@@ -20,23 +20,27 @@ function ProductAccordion() {
           "Orders are typically processed within 2-3 business days and shipped via our standard service. If you're not completely satisfied with your purchase, returns or exchanges are accepted within 30 days of receipt. Products must be unused and in their original packaging to qualify.",
       },
     ],
-  }
+  };
 
   const styles = {
     titleTextColor: "black",
     rowTitleColor: "black",
-    rowContentColor: "gray", 
-  }
+    rowTitleTextSize: "16px",
+    rowContentColor: "gray",
+    rowContentTextSize: "14px",
+    rowContentPaddingTop: "10px",
+    rowContentPaddingBottom: "10px",
+  };
 
   const config = {
-    // animate: true, tabFocus: true arrowIcon: "", 
-  }
+    // animate: true, tabFocus: true arrowIcon: "",
+  };
 
   return (
-    <div className="mt-10 paragraph-text tracking-wide leading-7 ">
+    <div className="mt-10 font-light tracking-wide leading-7 ">
       <Faq data={data} styles={styles} config={config} />
     </div>
-  )
+  );
 }
 
-export default ProductAccordion
+export default ProductAccordion;

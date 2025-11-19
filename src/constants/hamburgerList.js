@@ -23,7 +23,7 @@ const navigationMenuItems = [
     ],
   },
   {
-    page: "Faq",
+    page: "FAQ",
     link: "/faq",
     header: "Featured",
     subItems: [

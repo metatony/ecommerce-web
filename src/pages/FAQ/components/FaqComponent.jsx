@@ -35,10 +35,13 @@ function FaqComponent() {
 
   const styles = {
     titleTextColor: "black",
-    rowTitleColor: "black",
-    rowContentColor: "gray",
-    rowContentTextSize: "15px",
     titleTextSize: "30px",
+    rowTitleColor: "black",
+    rowTitleTextSize: "16px",
+    rowContentColor: "gray",
+    rowContentTextSize: "14px",
+    rowContentPaddingTop: "10px",
+    rowContentPaddingBottom: "10px",
   };
 
   const config = {
@@ -46,7 +49,7 @@ function FaqComponent() {
   };
 
   return (
-    <div className="">
+    <div>
       <Faq data={data} styles={styles} config={config} />
     </div>
   );

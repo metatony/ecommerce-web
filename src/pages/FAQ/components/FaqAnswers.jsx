@@ -9,10 +9,10 @@ function FaqAnswers() {
     >
       {/* FAQ Question and Description */}
       <div className="space-y-5">
-        <h2 className="section-header-text lg:text-3xl tracking-wider">
+        <h2 className="section-header-text font-[400] text-[#292929] tracking-wider">
           Where is my order?
         </h2>
-        <p className="paragraph-text tracking-wide leading-7">
+        <p className="paragraph-text tracking-wide leading-8">
           Check the details of your in-store and online purchases, and know
           their status at any moment in My Purchases. If you already have an
           account, log in with your e-mail address and password. If you

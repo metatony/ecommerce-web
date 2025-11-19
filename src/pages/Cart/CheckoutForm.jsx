@@ -17,6 +17,12 @@ const CheckoutForm = () => {
       return;
     }
 
+    // Check if cart is still not empty before processing
+    if (!cart || cart.length === 0) {
+      setErrorMessage("Your cart is empty. Please add items before checkout.");
+      return;
+    }
+
     // Trigger form validation and wallet collection
     const {error: submitError} = await elements.submit();
     if (submitError) {
@@ -58,15 +64,14 @@ const CheckoutForm = () => {
     return total + item.price;
   }, 0);
 
-
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 my-20">
-      <p className='text-center font-light mb-5'>Payment of £{totalPrice}</p>
+      <p className='text-center font-light mb-5'>Payment of £{totalPrice.toFixed(2)}</p>
 
       <PaymentElement />
       <button type="submit" 
       disabled={!stripe || !elements}
-      className="mt-4 w-full bg-black text-white py-2"
+      className="mt-4 w-full bg-black text-white p-3 text-center rounded-lg paragraph-text tracking-wider leading-7"
         >
         Pay
       </button>

@@ -73,9 +73,9 @@ function ProductDetails() {
       </section>
 
       <section className="mt-10 md:mt-20">
-        <p className="md:text-center paragraph-text tracking-wide leading-7 ">You might also like</p>
+        <p className="md:text-center paragraph-text tracking-wide leading-7 ">You Might Also Like</p>
 
-        <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10 lg:my-20 px-4 container mx-auto ">
+        <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10 lg:my-20 container mx-auto ">
           {randomItems.slice(0, 4).map((item) => (
             <div key={item.id} className="cursor-pointer">
               <Link to={`/product/${item.id}`}>

@@ -9,28 +9,25 @@ function SearchBar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  // Toggle the visibility of the search bar container
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
   };
 
-  // Update searchQuery with user's input
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
   };
 
-  // Filter products based on search input (case-insensitive)
   const filteredSearchResults = productList.filter((item) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
-    <section className="flex items-center space-x-5">
+    <section className="flex items-center ">
       {/* Search Icon toggles the search bar */}
       <FaSearch onClick={toggleSearch} className="lg:h-10 cursor-pointer" />
 
       {isSearchOpen && (
-        <section className="fixed top-[110px] left-0 right-0 w-full bg-white shadow-lg p-4 z-50">
+        <section className="fixed top-[110px] left-0 right-0 w-full bg-white shadow-xs p-4 z-50">
           {/* Input row: search icon, text input, and close ("X") button */}
           <div className="flex items-center container px-4 mx-auto ">
             <CiSearch className="h-5 w-5 mr-5" />

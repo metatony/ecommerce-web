@@ -2,8 +2,8 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <div className="container mx-auto px-4 flex flex-col h-[35vh] justify-center items-center font-light">
-      <p className="text-center">
+    <div className="container mx-auto px-4 flex flex-col h-[42vh] justify-center items-center font-light">
+      <p className="text-center paragraph-text tracking-wide ">
         Thanks for checking me out 😉 <br /> GitHub - {" "}
         <a
           className="text-blue-500"
@@ -15,7 +15,7 @@ function AboutPage() {
         </a>
       </p>
 
-      <p className="text-center">
+      <p className="text-center paragraph-text tracking-wide">
         View my blog - {" "}
         <a
           className="text-blue-500"

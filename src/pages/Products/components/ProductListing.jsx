@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function ProductListing() {
   return (
-    <section aria-labelledby="shop-products-heading" className="">
+    <section aria-labelledby="shop-products-heading">
       {/* Container for Sort and Filter Controls */}
 
       {/* Product Grid */}

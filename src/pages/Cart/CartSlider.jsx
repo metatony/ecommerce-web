@@ -61,12 +61,15 @@ function CartSlider({ isOpen, toggleCart }) {
 
         {cart.length > 0 && (
           <div className="p-4 font-light my-20 ">
-            <p className="mb-5 paragraph-text tracking-wide">
+            <p className="mb-5 paragraph-text tracking-wide text-center">
               You have {cart.length} item(s) in your cart
             </p>
 
             <button
-              onClick={() => navigate("/checkout")}
+              onClick={() => {
+                navigate("/checkout");
+                toggleCart();
+              }}
               className="w-full bg-black text-white p-3 text-center rounded-lg paragraph-text tracking-wide leading-7"
             >
               Check Out £{totalPrice}
