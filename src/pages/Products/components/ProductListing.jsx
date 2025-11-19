@@ -13,12 +13,14 @@ function ProductListing() {
         {productList.map((item) => (
           <section key={item.id} className="cursor-pointer">
             <Link to={`/product/${item.id}`}>
-              <img
-                className="w-full h-52 lg:h-96 object-cover rounded-lg"
-                src={item.desktopImage}
-                alt={item.name}
-                loading="lazy"
-              />
+              <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                <img
+                  className="w-full h-full object-cover"
+                  src={item.desktopImage}
+                  alt={item.name}
+                  loading="lazy"
+                />
+              </div>
               {/* h-52 lg:h-96 */}
             </Link>
             <div className="mt-2 paragraph-text tracking-wide leading-7">

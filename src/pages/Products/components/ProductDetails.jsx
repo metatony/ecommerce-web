@@ -19,9 +19,9 @@ function ProductDetails() {
     <main className="my-10 px-4 container mx-auto">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left Grid: Product Image */}
-        <div className="w-full">
+        <div className="aspect-[15/16] w-full md:aspect-square rounded-lg overflow-hidden">
           <img
-            className="w-full md:mt-0 rounded-lg"
+            className="w-full h-full object-cover md:mt-0 "
             src={product.desktopImage}
             alt={product.name}
             loading="lazy"
@@ -35,7 +35,10 @@ function ProductDetails() {
             {" "}
             {product.name} <br /> £{product.price}
           </h2>
-          <p className="md:w-[450px] paragraph-text tracking-wide leading-7"> {product.description} </p>
+          <p className="md:w-[450px] paragraph-text tracking-wide leading-7">
+            {" "}
+            {product.description}{" "}
+          </p>
 
           {/* button */}
           <div className="md:w-[300px] mt-5">
@@ -66,25 +69,31 @@ function ProductDetails() {
               <p className="font-normal section-header-text tracking-wider leading-8  ">
                 {item.subheader}
               </p>
-              <p className="paragraph-text tracking-wide leading-7 ">{item.body}</p>
+              <p className="paragraph-text tracking-wide leading-7 ">
+                {item.body}
+              </p>
             </article>
           );
         })}
       </section>
 
       <section className="mt-10 md:mt-20">
-        <p className="md:text-center paragraph-text tracking-wide leading-7 ">You Might Also Like</p>
+        <p className="md:text-center paragraph-text tracking-wide leading-7 ">
+          You Might Also Like
+        </p>
 
         <div className="grid h-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10 lg:my-20 container mx-auto ">
           {randomItems.slice(0, 4).map((item) => (
             <div key={item.id} className="cursor-pointer">
               <Link to={`/product/${item.id}`}>
-                <img
-                  className="w-full h-52 lg:h-96 object-cover rounded-lg"
-                  src={item.desktopImage}
-                  alt={item.name}
-                  loading="lazy"
-                />
+                <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={item.desktopImage}
+                    alt={item.name}
+                    loading="lazy"
+                  />
+                </div>
               </Link>
               <div className="paragraph-text tracking-wide leading-7 mt-2 ">
                 <p>{item.name}</p>

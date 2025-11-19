@@ -15,21 +15,32 @@ function Categories() {
 
       {/* Section Images */}
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-4 space-y-5 md:space-y-0 justify-between items-center">
-        <img
-          className="w-full rounded-lg"
-          src={Images.newArrivalsMobile}
-          alt="new arrivals"
-        />
-        <img
-          className="w-full rounded-lg"
-          src={Images.casualEditMobile}
-          alt="the casual edit"
-        />
-        <img
-          className="w-full rounded-lg"
-          src={Images.bestSellersMobile}
-          alt="best sellers"
-        />
+        <div className="aspect-[15/16] w-full rounded-lg overflow-hidden">
+          <img
+            className="w-full h-full object-cover md:mt-0 "
+            src={Images.newArrivalsMobile}
+            alt="new arrivals"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="aspect-[15/16] w-full rounded-lg overflow-hidden">
+          <img
+            className="w-full h-full object-cover md:mt-0 "
+            src={Images.casualEditMobile}
+            alt="the casual edit"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="aspect-[15/16] w-full rounded-lg overflow-hidden">
+          <img
+            className="w-full h-full object-cover md:mt-0 "
+            src={Images.bestSellersMobile}
+            alt="best sellers"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );

@@ -23,7 +23,7 @@ function App() {
   return (
     <GlobalProvider>
       <HelmetProvider context={helmetContext}>
-        <div className="">
+        <div>
           <BrowserRouter>
             <ScrollToTop />
             <Navbar toggleCart={toggleCart} />
@@ -47,5 +47,3 @@ function App() {
 }
 
 export default App;
-
-// className='container mx-auto px-4

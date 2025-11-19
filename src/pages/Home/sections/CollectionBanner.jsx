@@ -10,16 +10,23 @@ function CollectionBanner() {
       >
         {/* Image Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <img
-            className="w-full rounded-lg"
-            src={Images.collectionBanner1}
-            alt="new arrivals"
-          />
-          <img
-            className="w-full rounded-lg"
-            src={Images.collectionBanner2}
-            alt="the casual edit"
-          />
+          <div className="aspect-[15/16] w-full overflow-hidden rounded-lg">
+            <img
+              className="w-full h-full object-cover"
+              src={Images.collectionBanner1}
+              alt="new arrivals"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="aspect-[15/16] w-full overflow-hidden rounded-lg">
+            <img
+              className="w-full h-full object-cover"
+              src={Images.collectionBanner2}
+              alt="the casual edit"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 

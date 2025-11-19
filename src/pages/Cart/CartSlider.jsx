@@ -35,11 +35,14 @@ function CartSlider({ isOpen, toggleCart }) {
           cart.map((item) => (
             <div key={item.id}>
               <div className="px-4 py-5 flex justify-between items-start mb-4">
-                <img
-                  src={item.desktopImage}
-                  alt={item.name}
-                  className="w-16 h-16 object-cover"
-                />
+                <div className="aspect-square w-16 overflow-hidden rounded-lg">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={item.desktopImage}
+                    alt={item.name}
+                    loading="lazy"
+                  />
+                </div>
                 <div className="w-36 md:w-48 paragraph-text tracking-wide leading-7 ">
                   <p className=" ">{item.name}</p>
                   <p className="">£{item.price}</p>

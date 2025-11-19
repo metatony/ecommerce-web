@@ -19,11 +19,14 @@ function CarouselSlider(props) {
               return (
                 <div className="embla__slide " key={item.id}>
                   <Link to={`/product/${item.id}`}>
-                    <img
-                      src={item.desktopImage}
-                      alt={item.name}
-                      className="rounded-lg"
-                    />
+                    <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                      <img
+                        className="w-full h-full object-cover"
+                        src={item.desktopImage}
+                        alt={item.name}
+                        loading="lazy"
+                      />
+                    </div>
                   </Link>
 
                   <div className="mt-2 paragraph-text tracking-wide leading-7">
@@ -40,16 +43,19 @@ function CarouselSlider(props) {
       {/* Desktop Carousel - Non slidable */}
 
       <section className="hidden md:block">
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-4">
           {productList.slice(5, 10).map(function (item) {
             return (
               <div key={item.id}>
                 <Link to={`/product/${item.id}`}>
-                  <img
-                    src={item.desktopImage}
-                    alt={item.name}
-                    className="rounded-lg"
-                  />
+                  <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                    <img
+                      className="w-full h-full object-cover"
+                      src={item.desktopImage}
+                      alt={item.name}
+                      loading="lazy"
+                    />
+                  </div>
                 </Link>
 
                 <div className="mt-2 paragraph-text tracking-wide leading-7">
