@@ -35,7 +35,7 @@ function SectionFour() {
             virtually.
           </p>
 
-          <button className="mt-8 p-3 paragraph-text tracking-wider bg-[#F8F9FA] rounded-lg">
+          <button className="mt-5 p-3 paragraph-text tracking-wider bg-[#f5f5f5] rounded-lg">
             Book Appointment
           </button>
         </article>

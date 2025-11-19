@@ -40,7 +40,7 @@ function FaqCategories() {
       aria-label="FAQ Categories"
     >
       <div className="tracking-wide space-y-5 mt-10 lg:mt-0">
-        <h2 className="section-header-text tracking-wider leading-7 font-[400]">Categories</h2>
+        <h2 className="section-header-text tracking-wider leading-7 ">Categories</h2>
         {faqCategoriesList.map(function (item) {
           return (
             <div key={item.id} className="text-[#565656]">

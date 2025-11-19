@@ -9,7 +9,7 @@ function FaqAnswers() {
     >
       {/* FAQ Question and Description */}
       <div className="space-y-5">
-        <h2 className="section-header-text font-[400] text-[#292929] tracking-wider">
+        <h2 className="section-header-text text-[#292929] tracking-wider">
           Where is my order?
         </h2>
         <p className="paragraph-text tracking-wide leading-8">
