@@ -56,7 +56,7 @@ function ProductDetails() {
 
       {/* bottom div */}
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 md:mt-20 justify-items-center ">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-20 justify-items-center ">
         {infoList.map(function (item) {
           return (
             <article

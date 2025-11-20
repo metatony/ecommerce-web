@@ -35,9 +35,9 @@ function FaqComponent() {
 
   const styles = {
     titleTextColor: "black",
-    titleTextSize: "30px",
+    titleTextSize: "20px",
     rowTitleColor: "black",
-    rowTitleTextSize: "16px",
+    rowTitleTextSize: "15px",
     rowContentColor: "gray",
     rowContentTextSize: "14px",
     rowContentPaddingTop: "10px",
@@ -49,7 +49,7 @@ function FaqComponent() {
   };
 
   return (
-    <div>
+    <div className="font-light tracking-wide leading-7">
       <Faq data={data} styles={styles} config={config} />
     </div>
   );

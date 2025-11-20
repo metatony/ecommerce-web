@@ -25,7 +25,7 @@ function ProductAccordion() {
   const styles = {
     titleTextColor: "black",
     rowTitleColor: "black",
-    rowTitleTextSize: "16px",
+    rowTitleTextSize: "15px",
     rowContentColor: "gray",
     rowContentTextSize: "14px",
     rowContentPaddingTop: "10px",
