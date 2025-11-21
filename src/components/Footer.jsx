@@ -7,7 +7,7 @@ function Footer() {
         {/* Footer Content */}
         <section className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-5  py-[76px] paragraph-text ">
           {/* CONTACT US section */}
-          <div className="space-y-1 w-full">
+          <div className="space-y-3 w-full">
             <p className="mb-5 font-medium">CONTACT US</p>
             <p>+1 (844) 326-6000</p>
             <p>Email Us</p>
@@ -15,7 +15,7 @@ function Footer() {
           </div>
 
           {/* CUSTOMERS section */}
-          <div className="space-y-1 w-full">
+          <div className="space-y-3 w-full">
             <p className="mb-5 font-medium">CUSTOMERS</p>
             <p>Start a Return</p>
             <p>Return Policy</p>
@@ -25,7 +25,7 @@ function Footer() {
           </div>
 
           {/* COMPANY section */}
-          <div className="space-y-1 w-full">
+          <div className="space-y-3 w-full">
             <p className="mb-5 font-medium">COMPANY</p>
             <p>About Us</p>
             <p>Sustainability</p>

@@ -50,16 +50,17 @@ function SearchBar() {
               <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white max-h-[460px] overflow-y-auto p-4 mx-auto container scrollbar-hidden">
                 {filteredSearchResults.map((item) => (
                   <section key={item.id} className="cursor-pointer">
-                    <Link to={`/product/${item.id}`}>
-                      <img
-                        onClick={toggleSearch}
-                        className="w-full rounded-lg h-52 lg:h-96"
-                        src={item.desktopImage}
-                        alt={item.name}
-                        loading="lazy"
-                      />
+                    <Link to={`/product/${item.id}`} onClick={toggleSearch}>
+                      <div className="aspect-[4/4] w-full overflow-hidden rounded-lg">
+                        <img
+                          className="w-full h-full object-cover"
+                          src={item.desktopImage}
+                          alt={item.name}
+                          loading="lazy"
+                        />
+                      </div>
                     </Link>
-                    <div className="paragraph-text mt-2">
+                    <div className="paragraph-text tracking-wide leading-7 mt-2">
                       <p>{item.name}</p>
                       <p>£{item.price}</p>
                     </div>
